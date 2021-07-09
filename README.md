@@ -17,3 +17,5 @@
 
 
 Every folder has the essential files that will be needed to run the Python source code file.   
+
+![Solution_2_Stone Maison Karel](https://user-images.githubusercontent.com/59821979/125074361-a1605400-e0d6-11eb-8192-94c237735396.png)
