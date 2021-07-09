@@ -1,6 +1,6 @@
 # CS106A-Code-in-place-Stanford
 
-### This Course was teach in 2020 Pandemic. Python used as the programming language.
+### This Course was taught in the 2020 Pandemic. Python used as the programming language.
 
 ### PyCharm is the preferred tool to execute the assignments. 
 
