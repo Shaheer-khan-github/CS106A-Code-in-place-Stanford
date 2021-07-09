@@ -1,0 +1,17 @@
+import random
+MIN_RANDOM=0
+MAX_RANDOM=100
+NUM_RANDOM=10
+def main():
+    NUM_RANDOM=10  #Hope, without it should be worked  
+    while NUM_RANDOM>10:
+        NUM_RANDoM-=1
+        number=random.randint(MIN_RANDOM,MAX_RANDOM)
+        print(str(number))
+        
+         
+    pass
+
+
+if __name__ == '__main__':
+    main()

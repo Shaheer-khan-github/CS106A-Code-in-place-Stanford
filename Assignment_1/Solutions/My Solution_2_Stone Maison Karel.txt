@@ -1,0 +1,44 @@
+def main():
+#Complete Cycle of Carel before last ones    
+   while front_is_clear():
+      complete_cycle()
+#Last Column   
+   turn_left()
+   build_wall()
+   come_back()
+   turn_left()
+   
+##################### Functions-Colony ############################   
+   
+def complete_cycle():
+   turn_left()
+   build_wall()
+   come_back()
+   turn_left()
+   wall_to_wall()
+
+#Build destructive wall   
+def build_wall():
+   while front_is_clear():
+      if no_beepers_present():
+         put_beeper()
+         move()
+      else:
+         move()
+
+#Come back from top to bottom         
+def come_back():
+   turn_around()
+   if no_beepers_present():
+         put_beeper()
+   while front_is_clear():
+      move()
+   
+def turn_around():
+   turn_left()
+   turn_left()
+
+#One wall to another wall to build the infrastructure
+def wall_to_wall():
+   for i in range(4):
+      move()

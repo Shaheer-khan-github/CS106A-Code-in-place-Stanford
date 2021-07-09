@@ -1,0 +1,13 @@
+
+def main():    
+    j=10
+    for i in range(10):
+        print(str(j))
+        j-=1
+    print("Liftoff!")    
+        
+    pass
+
+
+if __name__ == '__main__':
+    main()

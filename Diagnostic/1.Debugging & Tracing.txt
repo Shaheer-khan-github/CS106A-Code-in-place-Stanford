@@ -1,0 +1,25 @@
+"""
+This program return the half value of numbers 
+**if the number is divisible by 2 it's good
+**else it round off to the nearest whole number and then divide by 2 
+"""
+
+"""
+Part B: 
+"""
+
+def divide_and_round(n):
+    """
+    Divides an integer n by 2 and rounds 
+    up to the nearest whole number
+    """
+    if n % 2 == 0:
+        n = n / 2
+    else:
+        n = (n + 1) / 2
+    return n    #Must return the value after processing 
+
+def main():
+    n = 42
+    n=divide_and_round(n) # This function call must be assign to a variable to store result of return value
+    print(n) 

@@ -1,0 +1,38 @@
+def main():
+#Complete Cycle of Carel    
+   odd_column()
+   next_wall()
+   second_odd_column()
+   
+   next_wall()
+   odd_column()
+   next_wall()
+   second_odd_column()
+
+##################### Functions-Colony ############################   
+   
+def odd_column():
+   turn_left()
+   while front_is_clear():
+      if no_beepers_present():
+         put_beeper()
+      else:
+         move()
+   turn_right()   
+
+def second_odd_column():
+   turn_right()
+   while front_is_clear():
+      if no_beepers_present():
+         put_beeper()
+      else:
+         move()
+   turn_left()   
+
+def next_wall():
+   for i in range(4):
+      move()
+
+def turn_right():
+   for j in range(3):
+      turn_left()

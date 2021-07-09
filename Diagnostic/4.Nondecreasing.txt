@@ -1,0 +1,30 @@
+def main():
+    print("Enter a sequence of non-decreasing numbers.")
+    #Enter value in current number
+    current_number=float(input("Enter num:"))  
+    #Store value of current number into previous number after subtracting 1
+    #to execute the while loop
+    previous_number= current_number - 1
+    #Counter starting value is 1 because we already input from user
+    counter=1
+    
+    #Work until current number is greater or equal to previous number
+    while current_number=>previous_number():  
+        #Store value of current number into previous number
+        previous_number= current_number
+        #Enter value in current number
+        current_number=float(input("Enter num:"))  
+        if current_number=>previous_number():
+            #Count until decreasing number occur       
+            counter +=1
+        
+        
+            
+    print("Thanks for playing!")    
+    print("Sequence length:",counter)    
+    
+    pass 
+
+
+if __name__ == "__main__":
+    main()

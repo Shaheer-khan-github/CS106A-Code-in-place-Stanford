@@ -1,0 +1,40 @@
+import random
+MIN_CHOICE=10
+MAX_CHOICE=99
+def main():
+    j=1
+    while j<=3:
+        #Enter First Random Number
+        first_random_number=random.randint(MIN_CHOICE,MAX_CHOICE)
+        
+        #Enter Second Random Number
+        second_random_number=random.randint(MIN_CHOICE,MAX_CHOICE)
+        
+        #Sum of random numbers
+        sum_of_random_numbers=first_random_number + second_random_number
+        
+        #What is _ + _ ?
+        print("What is " + str(first_random_number) + " + " + str(second_random_number) + " ? ")
+        
+        #("What is " + str(first_random_number) + " + " + str(second_random_number) + " ? ")
+        question=int(input())
+
+        #Your answer: _
+        print("Your answer: " + str(question))
+
+        #if input is equal to actual
+        if question==sum_of_random_numbers:
+            print("Correct! You've gotten " + str(j) + " correct in a row.")
+            j+=1
+        else:
+            print("Incorrect. The expected answer is " + str(sum_of_random_numbers))
+            j=1
+            
+    #Out from while loop when pass all three requirments        
+    print("Congratulations! You mastered addition.")        
+    
+    pass
+
+
+if __name__ == '__main__':
+    main()

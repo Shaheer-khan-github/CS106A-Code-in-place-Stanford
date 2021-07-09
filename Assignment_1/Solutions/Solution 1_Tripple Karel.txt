@@ -1,0 +1,89 @@
+from karel.stanfordkarel import *
+# File: triple.py
+# -----------------------------
+# Write a program, using only karel featuers,
+# which solve the triple problem
+def main():
+
+#When left side of beeper is blocked   
+#  --------------------
+# |
+# |
+   when_left_blocked()
+   turn_left()
+   move()
+
+#When left side of beeper is blocked
+#    |
+#    |
+#    |
+#    |
+#    -->
+   when_left_blocked()
+   turn_left()
+   move()
+
+#When left side of beeper is blocked   
+#  --------------------
+#                      |
+#                      |
+   when_left_blocked()
+   turn_right()
+
+#When left side of beeper is blocked
+#    |
+#    |
+#    |
+#    |
+#    -->
+   when_left_blocked()
+   turn_left()
+   move()
+   
+#When left side of beeper is blocked   
+#                      ^
+#                      |
+#  --------------------
+   when_left_blocked()
+   turn_left()
+   move()
+   straight_wall()
+   
+#Made wall in staright    
+   straight_wall()
+
+#When front and left side of beeper is blocked
+#                      ^
+#                      |
+#  --------------------
+   if front_is_blocked():
+      turn_right()
+      when_left_blocked()
+      turn_left()
+      move()
+      when_left_blocked()
+
+# When left side of beeper is blocked
+#  <-------------------
+#                      |
+#                      |
+   turn_left()      
+   move()
+   when_left_blocked()
+   
+#############################--Functions Colony--#########################################    
+
+def when_left_blocked():
+   while left_is_blocked():
+         put_beeper()
+         move()
+
+def straight_wall():
+   while front_is_clear():
+      put_beeper()
+      move()
+      
+def turn_right():
+   turn_left()
+   turn_left()
+   turn_left()
