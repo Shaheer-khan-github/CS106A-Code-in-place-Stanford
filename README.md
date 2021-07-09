@@ -9,7 +9,7 @@
 
 ### Each folder of Assignment has a pdf file with the Assignment number that explains the questions or tasks that need to be done. 
 
-### Similarly, Each folder of Assignment has a subfolder of Assignment which contains the required import files to run the code.
+### Similarly, folder of Assignment has a subfolder of Assignment which contains the required import files to run the code.
 
 #### Make Sure that the path set for karel libraries is either relative or absolute. 
 
